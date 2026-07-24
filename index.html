@@ -20,7 +20,7 @@
     --ink-soft:#5b5044;
     --smoke:#b9afa4;
   }
-
+ 
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
@@ -33,9 +33,9 @@
     font-family:'Work Sans', sans-serif;
     -webkit-font-smoothing:antialiased;
   }
-
+ 
   .wrap{max-width:640px;margin:0 auto;padding:0 20px 80px;}
-
+ 
   /* HERO */
   header{
     padding:56px 20px 40px;
@@ -69,7 +69,7 @@
     line-height:1.5;
   }
   .tagline strong{color:var(--paper);}
-
+ 
   .announce{
     font-size:16px;
     line-height:1.65;
@@ -79,7 +79,7 @@
     padding:0 4px;
   }
   .announce em{color:var(--yellow-corn);font-style:normal;font-weight:600;}
-
+ 
   /* TICKET */
   .ticket{
     position:relative;
@@ -99,9 +99,9 @@
     background-repeat:repeat-x;
   }
   .zig-bottom{transform:rotate(180deg);}
-
+ 
   .ticket-inner{padding:8px 32px 6px;}
-
+ 
   /* Coupon stub: QR + download */
   .stub{
     display:flex;
@@ -147,7 +147,7 @@
     margin-top:9px;
     line-height:1.4;
   }
-
+ 
   .perf{
     border-top:2px dashed var(--paper-shadow);
     position:relative;
@@ -163,7 +163,7 @@
   }
   .perf::before{left:-9px;}
   .perf::after{right:-9px;}
-
+ 
   /* STEPS */
   .steps{padding:26px 0 10px;}
   .steps-title{
@@ -203,7 +203,7 @@
     color:var(--green-avocado);
     font-weight:600;
   }
-
+ 
   /* FOOTER of ticket */
   .ticket-footer{
     text-align:center;
@@ -222,7 +222,7 @@
     color:var(--ink-soft);
     text-transform:uppercase;
   }
-
+ 
   /* SAFE NOTE */
   .safe{
     display:flex;
@@ -237,7 +237,7 @@
   .safe .icon{font-size:20px;line-height:1;}
   .safe p{margin:0;font-size:14px;line-height:1.55;color:var(--paper);}
   .safe strong{color:var(--green-avocado);}
-
+ 
   footer.page-end{
     text-align:center;
     margin-top:48px;
@@ -251,7 +251,7 @@
     font-size:20px;
     letter-spacing:0.03em;
   }
-
+ 
   @media (max-width:420px){
     .stub{flex-direction:column;align-items:stretch;text-align:center;}
     .stub .qr-box{align-self:center;}
@@ -262,8 +262,9 @@
 </head>
 <body>
   <div class="wrap">
-
+ 
     <header>
+      <div class="eyebrow"> · </div>
       <h1 class="logo">VP1</h1>
       <p class="tagline">Antojos <strong>a domicilio</strong>, directo desde tu celular.</p>
       <p class="announce">
@@ -272,72 +273,73 @@
         Ya puedes hacer tus pedidos directo desde tu teléfono, de la forma más rápida y cómoda. 🛵📱
       </p>
     </header>
-
+ 
     <div class="ticket">
       <div class="zig-top"></div>
       <div class="ticket-inner">
-
+ 
         <div class="stub">
           <div class="qr-box">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fexpo.dev%2Faccounts%2Fvp1org%2Fprojects%2Fvp1-suport%2Fbuilds%2F09c6ac05-dc49-4a07-906b-8d8774d3818d" alt="Código QR para descargar Vp1" width="104" height="104">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fexpo.dev%2Faccounts%2Fvp1org%2Fprojects%2Fvp1-suport%2Fbuilds%2Ff1a44200-5efc-4ac5-af08-9b0a181fdfe8" alt="Código QR para descargar Vp1" width="104" height="104">
           </div>
           <div class="stub-copy">
             <div class="label">Escanea o toca para descargar</div>
-            <a class="cta-btn" href="https://expo.dev/accounts/vp1org/projects/vp1-suport/builds/09c6ac05-dc49-4a07-906b-8d8774d3818d" target="_blank" rel="noopener">Descargar Vp1 ↓</a>
+            <a class="cta-btn" href="https://expo.dev/accounts/vp1org/projects/vp1-suport/builds/f1a44200-5efc-4ac5-af08-9b0a181fdfe8" target="_blank" rel="noopener">Descargar Vp1 ↓</a>
             <div class="cta-note">Es un archivo .apk para Android. La instalación toma menos de 2 minutos.</div>
           </div>
         </div>
-
+ 
         <div class="perf"></div>
-
+ 
         <div class="steps">
           <div class="steps-title">Cómo instalarla — 4 pasos</div>
-
+ 
           <div class="step">
             <div class="num">1</div>
             <div class="txt">Toca el botón de arriba <b>"Descargar Vp1"</b>, o escanea el código QR con la cámara de tu celular.</div>
           </div>
-
+ 
           <div class="step">
             <div class="num">2</div>
             <div class="txt">En la página que se abre, presiona el botón negro que dice <b>"Install"</b> (Instalar).</div>
           </div>
-
+ 
           <div class="step">
             <div class="num">3</div>
             <div class="txt">Tu teléfono te pedirá permiso para instalar aplicaciones fuera de la tienda oficial. Elige <b>"Aceptar"</b> o <b>"Permitir"</b>.
               <span class="note">✓ Es completamente seguro</span>
             </div>
           </div>
-
+ 
           <div class="step">
             <div class="num">4</div>
             <div class="txt">Abre la app, completa un registro rápido y <b>¡listo!</b> Ya puedes ordenar tus platillos favoritos.</div>
           </div>
         </div>
-
+ 
         <div class="perf"></div>
-
+ 
         <div class="ticket-footer">
           <div class="barcode"></div>
           <div class="thanks">Gracias por tu preferencia · Vuelve pronto</div>
         </div>
-
+ 
       </div>
       <div class="zig-bottom"></div>
     </div>
-
+ 
     <div class="safe">
       <div class="icon">🔒</div>
       <p><strong>¿Por qué pide ese permiso?</strong> Como Vp1 es una app nueva, Android pide tu confirmación para instalarla directamente (fuera de Google Play). Es un paso normal y no representa ningún riesgo para tu teléfono.</p>
     </div>
-
+ 
     <footer class="page-end">
       <div class="brand">VP1</div>
       <p>Queremos que seas parte de este gran paso con nosotros.<br>
-      Te llevamos el sabor directo a tu puerta. 🌮</p>
+      Te llevamos el sabor de <strong>TUS COMIDAS FAVORITAS</strong> directo a tu puerta. 🌮</p>
     </footer>
-
+ 
   </div>
 </body>
 </html>
+ 
